@@ -21,7 +21,7 @@ input.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
 function onSearch (e) {
   e.preventDefault();
- searchQuery = input.value.trim();
+ const searchQuery = input.value.trim();
  if(!searchQuery){
   clearMarkup(list);
   clearMarkup(info);
