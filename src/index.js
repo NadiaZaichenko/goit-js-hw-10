@@ -39,8 +39,8 @@ function onSearch (e) {
  renderMarkup(data);
 })
 .catch(error => {
-  cleanMarkup(list);
-  cleanMarkup(info);
+  clearMarkup(list);
+  clearMarkup(info);
   Notiflix.Notify.failure('Oops, there is no country with that name');
 });
 
